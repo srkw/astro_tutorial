@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "dev:vercel": "vercel dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -12,10 +13,12 @@
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
+    "@vercel/functions": "^2.2.2",
     "astro": "^5.9.4",
     "preact": "^10.26.9"
   },
   "devDependencies": {
+    "@astrojs/vercel": "^8.2.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1"

@@ -1,9 +1,12 @@
 // @ts-check
+import preact from '@astrojs/preact'
+import vercel from '@astrojs/vercel'
 import { defineConfig } from 'astro/config'
-
-import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact()]
+  integrations: [preact()],
+  adapter: vercel({
+    edgeMiddleware: true,
+  }),
 })
