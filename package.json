@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
     "@vercel/functions": "^2.2.2",
-    "astro": "^5.9.4",
+    "astro": "^5.12.4",
     "preact": "^10.26.9"
   },
   "devDependencies": {
