@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config'
 
 console.log('===============================')
 console.log('===============================')
-console.log('REVALIDATE_TOKEN:', import.meta.env.REVALIDATE_TOKEN)
+console.log('REVALIDATE_TOKEN:', process.env.REVALIDATE_TOKEN)
 console.log('===============================')
 console.log('===============================')
 
