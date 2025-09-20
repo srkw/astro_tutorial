@@ -13,16 +13,15 @@
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
+    "@vercel/edge": "^1.2.2",
     "@vercel/functions": "^2.2.2",
     "astro": "^5.10.1",
     "preact": "^10.26.9"
   },
   "devDependencies": {
-    "@astrojs/vercel": "^8.2.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
 }
