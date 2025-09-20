@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro'
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = async () => {
   const data = {
     message: 'GET Hello, World!',
     timestamp: new Date().toISOString(),
@@ -14,7 +14,7 @@ export const GET: APIRoute = () => {
   })
 }
 
-export const POST: APIRoute = () => {
+export const POST: APIRoute = async () => {
   const data = {
     message: 'POST Hello, World!',
     timestamp: new Date().toISOString(),
