@@ -13,7 +13,7 @@ console.log('===============================')
 export default defineConfig({
   integrations: [preact()],
   adapter: vercel({
-    // edgeMiddleware: true,
+    edgeMiddleware: true,
     isr: {
       bypassToken: process.env.REVALIDATE_TOKEN,
       exclude: [/^\/api\/.+/],
