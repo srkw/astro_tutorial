@@ -7,7 +7,7 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   integrations: [preact()],
   adapter: vercel({
-    // edgeMiddleware: true,
+    edgeMiddleware: true,
     isr: {
       bypassToken: import.meta.env.REVALIDATE_TOKEN,
       exclude: [/^\/api\/.+/],
