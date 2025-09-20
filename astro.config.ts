@@ -15,7 +15,7 @@ export default defineConfig({
   adapter: vercel({
     // edgeMiddleware: true,
     isr: {
-      bypassToken: import.meta.env.REVALIDATE_TOKEN,
+      bypassToken: process.env.REVALIDATE_TOKEN,
       exclude: [/^\/api\/.+/],
     },
   }),
