@@ -4,7 +4,7 @@ export const POST: APIRoute = async ({ url, request }) => {
   console.log('Revalidation request received')
   const body = await request.json()
   const route = body.route ?? '/'
-  console.log(`Revalidating route: ${route}`)
+  console.log(`Revalidating route: ${{ url, route }}`)
 
   const response = await fetch(`https://${url.host}${route}`, {
     method: 'HEAD',
