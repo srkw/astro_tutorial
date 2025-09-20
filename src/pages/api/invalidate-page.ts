@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro'
 
-export const POST: APIRoute = async ({ url, request }) => {
+export const POST: APIRoute = () => {
   // console.log('Revalidation request received')
   // const body = await request.json()
   // const route = body.route ?? '/'

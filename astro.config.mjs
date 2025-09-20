@@ -3,10 +3,6 @@ import preact from '@astrojs/preact'
 import vercel from '@astrojs/vercel'
 import { defineConfig } from 'astro/config'
 
-export const config = {
-  matcher: ['/((?!api).*)'],
-}
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [preact()],
