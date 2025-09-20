@@ -1,8 +1,9 @@
 import type { APIRoute } from 'astro'
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = async ({ request }) => {
   const data = {
     message: 'GET invalidate page',
+    request,
     timestamp: new Date().toISOString(),
   }
 
