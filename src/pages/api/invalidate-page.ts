@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro'
 
 export const GET: APIRoute = () => {
   const data = {
-    message: 'GET Hello, World!',
+    message: 'GET invalidate page',
     timestamp: new Date().toISOString(),
   }
 
